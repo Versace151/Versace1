@@ -1,6 +1,6 @@
 from flask import Flask
 
-app = Flask(name)
+app = Flask(__name__)
 
 html_content = """
 <!DOCTYPE html>
@@ -45,7 +45,7 @@ html_content = """
 
     <section id="about">
         <h2>Hakkında</h2>
-        <p>BEN VERSACE KİMSEBASGÖZ USTAMA FORR OLSUN</p>
+        <p>BEN VERSACE BURADAN KİMSEBASGOZ USTAMA FORRR OLSUN</p>
     </section>
 
     <section id="contact">
