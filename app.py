@@ -1,3 +1,8 @@
+from flask import Flask
+
+app = Flask(name)
+
+html_content = """
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -40,7 +45,7 @@
 
     <section id="about">
         <h2>Hakkında</h2>
-        <p>Ben Versace. Burdan kardeşlerime forrr olsun.</p>
+        <p>BEN VERSACE KİMSEBASGÖZ USTAMA FORR OLSUN</p>
     </section>
 
     <section id="contact">
@@ -54,3 +59,8 @@
 
 </body>
 </html>
+"""
+
+@app.route('/')
+def index():
+    return html_content
